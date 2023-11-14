@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>CSVカレンダー</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="fixed">
+                <h1>CSVカレンダー</h1>
+
+                <!-- 今日の日付と予定を表示 -->
+                <div class="today-text">
+                    <p id="today"></p>
+                    <p id="schedule" class="schedule"></p>
+                </div>
+
+                <div>カレンダー部分をスクロールして下さい。</div>
+
+                <!-- 凡例 -->
+                <div class="legend-item">
+                    <p class="legend-text">最繁忙期・・<span class="legend_1">ピンク</span></p>
+                    <p class="legend-text">繁忙期・・・<span class="legend_2">オレンジ</span></p>
+                    <p class="legend-text">閑散期・・・<span class="legend_3">水色</span></p>
+                </div>
+            </div>
+
+
+            <!-- カレンダーを表示 -->
+            <div id="calendar" class="calendar-container"></div>
+
+
+            <!-- 今日の日付を取得するスクリプト -->
+            <script src="js/today.js"></script>
+            <!-- カレンダーを表示するスクリプト -->
+            <script src="js/calendar.js"></script>
+
+        </div>
+    </body>
+
+</html>

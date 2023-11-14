@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+head, body {
+    /* スクロール無効 */
+    overflow: hidden;
+    text-align: center;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+h1,
+.today-text {
+    text-align: center;
+    margin: 10px auto;
+    width: max-content;
+}
+
+.legend-item {
+    margin: 10px auto;
+    padding: 10px;
+    width: max-content;
+    border: 1px solid black;
+}
+
+table {
+    border: 2px solid black;
+    margin: 10px auto;
+}
+
+th {
+    padding: 2%;
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+    border-bottom: none;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+.calendar-container {
+    height: 100vh;
+    overflow: auto;
+    position: relative;
+    top: 330px;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#today {
+    font-size: 1.25rem;
+    font-weight: bold;
+    background-color: yellow;
+    padding: 5px;
+    margin: 10px;
+}
+
+.schedule {
+    font-size: 1.25rem;
+    font-weight: bold;
+    background-color: lightgray;
+    padding: 5px;
+    margin: 10px;
+    color: black;
+}
+
+.legend-text .legend_1 {
+    background-color: pink;
+}
+
+.legend-text .legend_2 {
+    background-color: orange;
+}
+
+.legend-text .legend_3 {
+    background-color: skyblue;
+}
